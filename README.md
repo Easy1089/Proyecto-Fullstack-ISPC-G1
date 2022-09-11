@@ -1,2 +1,5 @@
 # Proyecto-Fullstack-ISPC-G1
-Repositorio del Proyecto de Fullstack ISPC 
+Repositorio del Proyecto de Fullstack ISPC
+
+# NO CARGAR ARCHIVOS EN ESTE REPOSITORIO QUE ES EL QUE VAMOS A TENER COMO OFICIAL PARA PRESENTAR 
+
