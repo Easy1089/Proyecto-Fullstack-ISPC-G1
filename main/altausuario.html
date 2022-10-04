@@ -1,13 +1,75 @@
-<html>
-<head></head>
-<body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
+<head>
+    <meta charset="utf-8" />
+    <title>Alta de usuarios</title>
+    <meta name="author" content="Proyecto Integrador Fullstack - Grupo 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors" />
+    <link href="icon/icono.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="rev-slider/css/settings.css" />
+    <link rel="stylesheet" type="text/css" href="rev-slider/css/layers.css" />
+</head>
 
-
-    
+<body class="body-altausuario">
+    <div class="main">
+        <section class="altausuario">
+            <div class="container-altausuario">
+                <div class="content-altausuario">
+                    <form method="POST" id="altausuario-form" class="form-altausuario">
+                        <h2 class="h2-altausuario">Crear tu cuenta</h2>
+                        <div class="form-group-altausuario">
+                            <input type="text" class="form-input-altausuario" name="usuario" id="usuario"
+                                placeholder="Usuario" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="password" class="form-input-altausuario" name="password" id="password"
+                                placeholder="Password" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="password" class="form-input-altausuario" name="re_password" id="re_password"
+                                placeholder="Repetí tu password" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="text" class="form-input-altausuario" name="name" id="name"
+                                placeholder="Tu nombre" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="text" class="form-input-altausuario" name="apellido" id="apellido"
+                                placeholder="Tu apellido" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="email" class="form-input-altausuario" name="email" id="email"
+                                placeholder="Tu e-mail" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="tel" class="form-input-altausuario" name="telefono" id="telefono"
+                                placeholder="Tu teléfono" />
+                        </div>
+                        <div class="form-group-altausuario">
+                            <input type="checkbox" name="terminosycondiciones" id="terminosycondiciones"
+                                class="terminosycondiciones-altausuario" />
+                            <label for="terminosycondiciones" class="terminosycondiciones-altausuario">
+                                Acepto todos los términos de
+                                <a href="#" class="terminos-altausuario">Términos del servicio</a>
+                            </label>
+                        </div>
+                        <div class="form-group-altausuario">
+                            <button type="submit" name="submit" id="submit" class="boton-altausuario">Aceptar</button>
+                        </div>
+                    </form>
+                    <p class="loginaqui-altausuario">
+                        ¿Ya tienes una cuenta?
+                        <a href="login-1.html" class="loginaqui-link-altausuario">Ingresa aquí</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
-
-
-
 
 </html>
