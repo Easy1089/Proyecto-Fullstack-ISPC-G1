@@ -8865,24 +8865,34 @@ footer.style3 .footer-widgets .widget-text span {
 }
 
 /*ALTA USUARIO*/
-.container-altausuario {
+
+.estilosforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../image/corchoszoom.jpg");
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.container-estilosforms {
     width: 580px;
     position: relative;
     margin: auto;
 }
 
-.img-altausuario {
+.img-estilosforms {
     max-width: 100%;
     height: auto;
 }
 
-.p-altausuario {
+.p-estilosforms {
     margin-bottom: 0px;
     font-size: 13px;
     color: #777;
 }
 
-.h2-altausuario {
+.h2-estilosforms {
     line-height: 1.66;
     margin: 0;
     padding: 0;
@@ -8895,23 +8905,18 @@ footer.style3 .footer-widgets .widget-text span {
     color: rgba(0, 0, 0, .9);
 }
 
-.body-altausuario {
+.body-estilosforms {
     font-size: 13px;
     line-height: 1.8;
     color: #222;
-    font-family: Marcellus;
-    background-image: url("../image/corchoszoom.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 50px 0;
+    font-family: "Marcellus";
 }
 
-.form-altausuario {
+.form-estilosforms {
     padding: auto;
 }
 
-.content-altausuario {
+.content-estilosforms {
     background: #fff;
     border-radius: 2rem;
     flex-direction: column;
@@ -8921,7 +8926,7 @@ footer.style3 .footer-widgets .widget-text span {
     padding: 20px 20px 20px 20px;
 }
 
-.terminosycondiciones-altausuario {
+.terminosycondiciones-estilosforms {
     font-size: 14px;
     font-weight: 500;
     color: #ffffff;
@@ -8929,13 +8934,13 @@ footer.style3 .footer-widgets .widget-text span {
     letter-spacing: 2px;
 }
 
-.terminosycondiciones-altausuario a {
+.terminosycondiciones-estilosforms a {
     color: #c02323;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.loginaqui-altausuario {
+.loginaqui-estilosforms {
     color: #fff;
     text-align: center;
     margin-top: 5px;
@@ -8945,13 +8950,13 @@ footer.style3 .footer-widgets .widget-text span {
     letter-spacing: 2px;
 }
 
-.loginaqui-altausuario a {
+.loginaqui-estilosforms a {
     color: #c02323;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.boton-altausuario {
+.boton-estilosforms {
     margin-top: 17px;
     display: inline-block;
     margin-left: 14px;
@@ -8966,13 +8971,13 @@ footer.style3 .footer-widgets .widget-text span {
 }
 
 /* Accion que realiza el boton al pasar el cursor */
-.boton-altausuario:hover {
+.boton-estilosforms:hover {
     color: #e9ecef;
     background: rgba(133, 15, 15, 0.6);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.form-group-altausuario {
+.form-group-estilosforms {
     text-align: center;
     margin-top: -10px;
     margin-bottom: auto;
@@ -8980,7 +8985,7 @@ footer.style3 .footer-widgets .widget-text span {
 
 }
 
-.form-input-altausuario {
+.form-input-estilosforms {
     display: block;
     margin: auto;
     border: 1px solid #fff;
@@ -8991,7 +8996,7 @@ footer.style3 .footer-widgets .widget-text span {
     font-weight: 500;
 }
 
-.form-input-altausuario::placeholder {
+.form-input-estilosforms::placeholder {
     color: rgba(0, 0, 0, .9);
     font-weight: 500;
 }
