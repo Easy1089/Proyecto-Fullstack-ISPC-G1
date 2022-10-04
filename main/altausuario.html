@@ -1,13 +1,75 @@
-<html>
-<head></head>
-<body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
+<head>
+    <meta charset="utf-8" />
+    <title>Alta de usuarios</title>
+    <meta name="author" content="Proyecto Integrador Fullstack - Grupo 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors" />
+    <link href="icon/icono.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="rev-slider/css/settings.css" />
+    <link rel="stylesheet" type="text/css" href="rev-slider/css/layers.css" />
+</head>
 
-
-    
+<body class="body-estilosforms">
+    <div class="main">
+        <section class="estilosforms">
+            <div class="container-estilosforms">
+                <div class="content-estilosforms">
+                    <form method="POST" id="estilosforms-form" class="form-estilosforms">
+                        <h2 class="h2-estilosforms">Crear tu cuenta</h2>
+                        <div class="form-group-estilosforms">
+                            <input type="text" class="form-input-estilosforms" name="usuario" id="usuario"
+                                placeholder="Usuario" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="password" class="form-input-estilosforms" name="password" id="password"
+                                placeholder="Password" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="password" class="form-input-estilosforms" name="re_password" id="re_password"
+                                placeholder="Repetí tu password" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="text" class="form-input-estilosforms" name="name" id="name"
+                                placeholder="Tu nombre" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="text" class="form-input-estilosforms" name="apellido" id="apellido"
+                                placeholder="Tu apellido" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="email" class="form-input-estilosforms" name="email" id="email"
+                                placeholder="Tu e-mail" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="tel" class="form-input-estilosforms" name="telefono" id="telefono"
+                                placeholder="Tu teléfono" />
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <input type="checkbox" name="terminosycondiciones" id="terminosycondiciones"
+                                class="terminosycondiciones-estilosforms" />
+                            <label for="terminosycondiciones" class="terminosycondiciones-estilosforms">
+                                Acepto todos los términos de
+                                <a href="#" class="terminos-estilosforms">Términos del servicio</a>
+                            </label>
+                        </div>
+                        <div class="form-group-estilosforms">
+                            <button type="submit" name="submit" id="submit" class="boton-estilosforms">Aceptar</button>
+                        </div>
+                    </form>
+                    <p class="loginaqui-estilosforms">
+                        ¿Ya tienes una cuenta?
+                        <a href="login-1.html" class="loginaqui-link-estilosforms">Ingresa aquí</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
-
-
-
 
 </html>
