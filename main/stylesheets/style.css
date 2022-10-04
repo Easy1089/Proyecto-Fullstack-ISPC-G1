@@ -15,6 +15,7 @@
 @import url("revolution-slider.css");
 @import url("magnific-popup.css");
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Marcellus|Rouge+Script|Laila:300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); /* Agredado de fuente Sans Pro*/
 
 /**	* Reset	* Repeatable Patterns	* header.style1	* mobile button	* mobile navigation	* Page Title	* main-blog-right	* sidebar	* footer.style1	* Blog-details-fullwidth	* Blog-Grid-2column	* pagination	* Blog-grid-3column	* Blog-details-slidebar	* main-blog-details .sidebar	* main-shop-fullwidth	* Shop-right-slidebar-list	* flat-about	* flat-deal-of-the-week	* flat-event	* flat-latest	* top-bar	* header style2	* flat-test	* testimonial	* flat-deal-of-the-week style2	* flat-top-products	* flat-banner	* flat-products style2	* flat-new-latest style2	* footer.style2	* header.style3	* flat-about.style3	* flat-deal-of-the-week.style3	* flat-products.style3	* flat-new-latest.style3	* footer.style3	* flat-about	* flat-our-product style4	* flat-row	* flat-our-product	* flat-new-latest style5	* flat-benefil	* flat-about-us	* flat-our-history	* flat-team	* flat-event	* filter-content	* flat-map-content	* flat-get-in	* flat-get-in-touch	* lider-homepage-1	* lider-homepage-2	* lider-homepage-3*/
 /* Reset-------------------------------------------------------------- */
@@ -5629,141 +5630,324 @@ body.bg-boxed {
     margin-top: 57px;
     display: inline-block;
 }
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
 
 /* footer.style3 */
-footer.style3 {
-    background-image: url(../image/footer.jpg);
-    height: 445px;
-    max-height: 445px;
+
+footer												
+{												
+	font-family: 'Source Sans Pro','Marcellus';	    /*CAMBIAR LETRA*/
+	width: 100%;														
+	background-image: url(../image/Textura_madera.jpg);	
+	display: grid;
 }
 
-footer.style3 .container {
-    text-align: center;
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container_footer											/* Contenedor principal del footer */
+{														
+	background-image: url(../image/Textura_madera.jpg);		/* Imagen de fondo de madera */
+	display: grid;											/* Display flexible */
+	justify-content: space-between;							/* Contenido justicado mediante space-between */
+	box-shadow: 5px 15px 30px rgba(0,0,0,1); 		   /* Sobra del footer para lograr una separacion con el body */		
+	grid-template-columns: 1fr 2fr 2fr 2fr 3fr;	
+	grid-gap: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
-footer.style3 .footer-widgets .widget-logo {
-    padding-top: 77px;
+.box_footer											/* Cajas contenidas por la distribucion en columnas mediante grid */
+{
+	display: flex;									/* Display flexible */
+	flex-direction: column;							/* Coloco el contenido de la caja en forma de columnas */
+	padding: 40px;									/* Se le da un padding al contenido de 40px */
 }
 
-footer.style3 .footer-widgets .widget-icon {
-    padding-top: 25px;
+.logo_vino img
+{
+    border-radius: 250px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.7);
 }
 
-footer.style3 .footer-widgets .widget-icon ul {
-    list-style-type: none;
+.first_letter 
+{
+	color:rgba(133, 15, 15, 0.9);
 }
 
-footer.style3 .footer-widgets .widget-icon ul li {
-    display: inline-block;
-    position: relative;
-    padding: 0 21px;
+.box_footer h2  /* Etiquetas H2 dentros de los contenedores .box_footer */
+{
+	font-size: 30px;									/* Fuente del texto de 30px */
+	margin-bottom: 10px;								/* Margen inferior 10px */
+	color: rgba(255,255,255,0.5); 					   /* Color del texto */
+	font-weight: bolder;								/* Colocar texto en negrita */
+	text-shadow: 7px 3px 5px rgba(0, 0, 0, 0.7);	   /* Sombra del texto */
 }
 
-footer.style3 .footer-widgets .widget-icon ul li a {
-    text-decoration: none;
+.empresa, .redes
+{
+	text-align: center;
 }
 
-footer.style3 .footer-widgets .widget-icon ul li a:hover,
-footer.style3 .footer-widgets .widget-icon ul li.active a {
-    color: #c02323;
+.contacto 
+{
+	margin-left: 50px;
 }
 
-footer.style3 .footer-widgets .widget-title {
-    padding-top: 17px;
-    margin-bottom: 15px;
+.box_footer p			/* Etiquetas P dentros de los contenedores .box_footer */
+{
+	color: #e9ecef;	    /* Color blanco del texto */
+	font-size: 17px;		 /* Fuente 15px */
+	margin-top: 10px;		 /* Margen superior de 10px */
 }
 
-footer.style3 .footer-widgets .widget-title h2 {
-    font-family: Marcellus;
-    font-size: 24px;
-    line-height: 36px;
-    color: #191919;
+
+.box_footer p img		/* Etiquetas img que se enuentra dentro de las p incluida en los contenedores .box_footer */
+{
+	height: 30px;			/* Alto de 30px */
+	width: 30px;			/* Ancho de 30px */
+	margin-right: 15px;		/* Margen derecho de 10px para separar la imagen del texto */
 }
 
-footer.style3 .footer-widgets .widget-title h2:hover {
-    color: #c02323;
+.box_footer a			/* Etiquetas A dentros de los contenedores .box_footer */
+{
+	font-size: 18px;		/* Tamaño fuente 17px */
+	margin-top: 10px;		/* Margen topo de 10px */
+	padding-left: 15px;
+	color: #e9ecef;	   /* Color del texto */
+	font-weight: 600;		/* Nivel de negrita de la fuente */
+	letter-spacing: 1px;	/* Espaciado entre caracteres de 1px */
+	cursor: pointer;		/* Cambia el cursor al momento de pasar por el link */
+	transition: all 300ms ease;
 }
 
-footer.style3 .footer-widgets .widget-contact {
-    max-width: 370px;
-    margin: 0 auto;
-    position: relative;
+.box_footer a:hover			/* Accion al pasar sobre la etiquetas A dentros de los contenedores .box_footer */
+{
+	background: rgba(133, 15, 15, 0.6);		/* Color de fondo */
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.7); /* Espaciado entre caracteres de 1px */
 }
 
-footer.style3 .footer-widgets .widget-contact input {
-    border-radius: 20px;
-    border: 0;
-    width: 100%;
-    display: inline-block;
+.box_footer a .fa-brands	/* Etiquetas clase .fa-brands dentro de la etiqueta A incluida en los contenedores .box_footer */
+{
+	color: #e9ecef;		/* Color texto e iconos */
+	margin-right: 10px;		 /* Margen derecho de 10px */
+	margin-top: 5px;		 /* Margen top de 5px */
 }
 
-footer.style3 .footer-widgets .widget-contact button {
-    padding: 16px 18px;
-    background-color: #c02323;
-    border-radius: 30px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #fff;
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.suscripcion 				/* Clase suscripcion */
+{
+	text-align: center;	/* El texto dentro de la clase se encuentra alineado en el centro */
+	padding: 40px;		
 }
 
-footer.style3 .footer-widgets .widget-contact button:hover {
-    background-color: #191919;
-    color: #c02323;
+.suscripcion .susc_label	/* Clase .susc_label que se encuentre dentro de la clase suscripcion */
+{
+	padding-right: 55px;				/* Padding derecho de 55px */
+	padding-bottom: 10px;				/* Padding inferior de 10px */
+	font-size: 30px;					/* Tamaño de la fuente de 25px */
+	margin-bottom: 10px;				/* Margen inferior de 10px */
+	color: rgba(255,255,255,0.5); 	   /* Color del texto */	
+	font-weight: bolder;				/* Nivel de negrita del texto */
+	text-shadow: 7px 3px 5px rgba(0, 0, 0, 0.7);	/* Somreado del texto */
 }
 
-footer.style3 .footer-widgets .widget-contact button:hover i {
-    color: #c02323;
+.suscripcion .div_mail		/* Clase .div_mail que se encuentra de .suscripcion*/
+{
+	display: flex;			/* Display flexible */
 }
 
-footer.style3 .footer-widgets .widget-menu {
-    padding-top: 8px;
+.suscripcion .div_mail .input_mail   /* Clase .input_mail que se encuentra de .div_mail*/
+{
+	display: inline-block;					/* Display bloque en linea */
+	border-radius: 20px;					/* Bordes redondeados con un radio de 20px */
+	background: rgba(255,255,255,0.2);	   /* Color de fondo */
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.7);
+	cursor: pointer; 						/* Cambio del cursor al momento de posicionar el cursor encima */
+	color: #eee;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 1.5px;
 }
 
-footer.style3 .footer-widgets .widget-menu ul {
-    list-style-type: none;
+.suscripcion .div_mail .input_mail::placeholder /* Edicion del texto dentro de la etiqueta input que contiene la clase .input_mail  */
+{
+	text-align: center;		/* Texto alineado al centro */
+	letter-spacing: 1px;	/* Espaciado de 1px entre caracteres */
+	color: #fff;		   /* Color del texto */
+	font-size: 20px;		/* Tamaño de la fuente de 20px */
 }
 
-footer.style3 .footer-widgets .widget-menu ul li {
-    display: inline-block;
-    position: relative;
-    padding: 0 22px;
+
+.suscripcion .div_mail .boton /* Edicion del boton de envio dentro de la clase div_mail */
+{
+	font-size: 23px;				/* Tamaño de fuente de 23px */
+	display: inline-block;			/* Display bloque en linea */
+	margin-left: 15px;				/* Margen izquierdo de 15px */
+	height: 50px;					/* Alto de 50px */
+	width: 50px;					/* Ancho de 50px */
+	border-radius: 25px;			/* Borde redondeado con radio de 25px para generar la forma circular */
+	background: rgba(255,255,255,0.3); /* Color de fondo */
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.7); 	
 }
 
-footer.style3 .footer-widgets .widget-menu ul li:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 1px;
-    height: 11px;
-    background-color: #999999;
-    transform: translateY(-50%);
+.suscripcion .div_mail .boton:hover  /* Accion que realiza el boton al pasar el cursor */
+{
+	color: #e9ecef;						    /* Color del texto en blanco */
+	background: rgba(133, 15, 15, 0.6);		/* Color de fondo */
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.7);  /* Sombra sobre el boton */	
 }
 
-footer.style3 .footer-widgets .widget-menu ul li.contact:after {
-    display: none;
+.suscripcion .div_mail .boton_1 /* COnfiguracion de la imagen dentro del boton */
+{
+	margin-left: 5px;			/* Margen izquierdo de 5px */
+	margin-right: 20px;			/* Margen derecho de 20px */
+	padding-right: 20px;		/* Padding derecho de 20px */
+	padding-top: 10px;			/* Padding superior de 20px  */
+	width: 40px;				/* Ancho de 40px */
+	height: 40px;				/* Alto de 40px */
 }
 
-footer.style3 .footer-widgets .widget-menu ul li a {
-    text-decoration: none;
-    font-family: Marcellus;
-    font-size: 14px;
-    line-height: 36px;
-    color: #a6a6a6;
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.box_copyright /* Segundo bloque de footer (Derechos de autor) */
+{
+	align-content: center;					/* Contenido alineado en el centro */
+	display: flex;							/* Display flexible */
+	justify-content: space-around;			/* Justificacion del contenido space-around */
+	margin-top: 10px;						/* Margen superior de 10px */
+	padding-bottom: 10px;					/* Padding inferior de 10px */
+	padding: 0px 40px;						
 }
 
-footer.style3 .footer-widgets .widget-menu ul li a:hover,
-footer.style3 .footer-widgets .widget-menu ul li.active a {
-    color: #c02323;
+.box_copyright p  /* Etiqueta P dentro del bloque box_copyright */
+{
+	display: inline-block;  		
+	color: #eee;				   /* Color del texto */
 }
 
-footer.style3 .footer-widgets .widget-text span {
-    font-family: Libre Baskerville;
-    font-size: 14px;
-    line-height: 36px;
-    color: #a6a6a6;
+.box_copyright b	/* Etiqueta B dentro del bloque box_copyright */
+{
+	display: inline-block; /* Display bloque en linea */
+	color: #eee;
+	font-weight: 600;
 }
+
+.box_copyright b img /* Etiqueta img dentro de B perteneciente al bloque box_copyright */
+{
+	padding-bottom: 5px;	/* Padding inferior de 5px */
+	margin-left: 10px;		/* Margen izquierdo de 10px */
+	width: 20px;		    /* Ancho de 20px */
+	border-radius: 15px;		/* Borde redondeadon con radio de 5px */
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1748px)
+{
+	.container_footer .logo_vino
+	{
+		display: none;
+	}
+
+	.container_footer
+	{
+		grid-template-columns: 33% 33% 33%;
+		margin:0px;
+	}
+
+	.container_footer .suscripcion
+	{
+		grid-column: 1 / -1;
+		padding-right: 250px;
+		padding-left: 250px;
+	}
+} 
+
+@media screen and (max-width: 1200px) 
+{
+		
+	.container_footer .suscripcion
+	{
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+
+}
+
+@media screen and (max-width: 1200px) 
+{
+	.contacto p img		
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 869px) 
+{
+	.container_footer
+	{
+		grid-template-columns: 50% 50%;
+	}
+
+	.empresa		
+	{
+		display: none;
+	}
+
+	.container_footer .suscripcion
+	{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.suscripcion .susc_label
+	{
+		padding: 0px;
+	}
+
+}
+
+@media screen and (max-width: 585px) 
+{
+	.container_footer
+	{
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 501px) 
+{
+	.container_footer
+	{		
+		grid-template-columns: 100%;
+		justify-content: center;
+	}
+
+	.container_footer .contacto
+	{
+		text-align: center;
+		margin: 0px;		
+	}
+	
+}
+
+@media screen and (max-width: 223px) 
+{
+	.container_footer .box_footer
+	{
+		padding: 20px 0px;
+	}
+}
+
+
+
+
+
 
 .main-homepage-4 .slider-style4 {
     background-image: url(../image/footer.jpg);
