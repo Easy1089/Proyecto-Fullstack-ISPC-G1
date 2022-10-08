@@ -4980,7 +4980,7 @@ body.bg-boxed {
 } /* footer.style3 */
 footer.style3 {
   background-image: url(../image/footer.jpg);
-  height: 445px;
+  box-shadow: 5px 15px 30px rgba(0,0,0,1);
   max-height: 445px;
 }
 footer.style3 .container {
@@ -5002,6 +5002,8 @@ footer.style3 .footer-widgets .widget-icon ul li {
 }
 footer.style3 .footer-widgets .widget-icon ul li a {
   text-decoration: none;
+  color: #a6a6a6;
+  font-size: 20px;
 }
 footer.style3 .footer-widgets .widget-icon ul li a:hover,
 footer.style3 .footer-widgets .widget-icon ul li.active a {
@@ -5028,12 +5030,20 @@ footer.style3 .footer-widgets .widget-contact {
 footer.style3 .footer-widgets .widget-contact input {
   border-radius: 20px;
   border: 0;
-  width: 100%;
+  width: 99%;
   display: inline-block;
+  box-shadow: 5px 5px 5px rgba(0,0,0,7);
 }
+
+footer.style3 .footer-widgets .widget-contact input::placeholder {
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
 footer.style3 .footer-widgets .widget-contact button {
   padding: 16px 18px;
-  background-color: #c02323;
+  background-color:rgba(133, 15, 15, 0.8);
+  box-shadow: 5px 5px 5px rgba(0,0,0,7);
   border-radius: 30px;
   position: absolute;
   top: 0;
@@ -5041,7 +5051,7 @@ footer.style3 .footer-widgets .widget-contact button {
   color: #fff;
 }
 footer.style3 .footer-widgets .widget-contact button:hover {
-  background-color: #191919;
+  background-color: #b48181f3;
   color: #c02323;
 }
 footer.style3 .footer-widgets .widget-contact button:hover i {
@@ -5074,7 +5084,7 @@ footer.style3 .footer-widgets .widget-menu ul li.contact:after {
 footer.style3 .footer-widgets .widget-menu ul li a {
   text-decoration: none;
   font-family: Marcellus;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 36px;
   color: #a6a6a6;
 }
@@ -5088,6 +5098,19 @@ footer.style3 .footer-widgets .widget-text span {
   line-height: 36px;
   color: #a6a6a6;
 }
+
+.model_style_content_footer{    
+  background: url(../image/corchoszoom.jpg);
+  color: #fff
+}
+
+.model_style_tittle_h1_footer{
+  font-weight: bold; 
+  width: 100%;
+  color: rgba(255,255,255,0.6); 
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
 .main-homepage-4 .slider-style4 {
   background-image: url(../image/footer.jpg);
   padding: 87px 0 272px 0;
