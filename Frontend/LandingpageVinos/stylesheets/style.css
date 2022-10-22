@@ -5692,25 +5692,29 @@ footer.style3 .footer-widgets .widget-contact input {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 7);
 }
 
-footer.style3 .footer-widgets .widget-contact input::placeholder {
-  text-align: center;
-  letter-spacing: 1.5px;
+
+footer.style3 .footer-widgets .widget-contact input::placeholder  /* Se modifico el texto interno del campo de texto interno*/
+{
+  text-align: center;           /* Texto centrado*/
+  letter-spacing: 1.5px;        /* Espacio entre caracteres de 1.5px*/
 }
 
-footer.style3 .footer-widgets .widget-contact button {
+footer.style3 .footer-widgets .widget-contact button  /* Se modifico el boton de envio */
+{
   padding: 16px 18px;
   background-color: rgba(133, 15, 15, 0.8);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 7);
-  border-radius: 30px;
+  border-radius: 30px;                          /* Se le agrega un borde radius de 30 px para que quede con forma circular*/
   position: absolute;
   top: 0;
   right: 0;
-  color: #fff;
+  color: #fff;                                /* Color de la imagen en blanco */
 }
 
-footer.style3 .footer-widgets .widget-contact button:hover {
-  background-color: #b48181f3;
-  color: #c02323;
+footer.style3 .footer-widgets .widget-contact button:hover  /* Al pasar el cursor sobre el boton de envio */
+{
+  background-color: #b48181f3; /* El fondo cambia de color */
+  color: #c02323;       
 }
 
 footer.style3 .footer-widgets .widget-contact button:hover i {
