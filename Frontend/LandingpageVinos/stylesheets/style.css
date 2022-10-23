@@ -9020,7 +9020,8 @@ footer.style3 .footer-widgets .widget-text span {
 }
 
 /*LOGIN MARCELO*/
-
+/*Éstos son los estilos que definí para el form del login. Se tuvo en cuenta los 
+estilos ya definidos en el resto de los forms.*/
 .body-login {
   font-size: 12px;
   line-height: 1.8;
