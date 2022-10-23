@@ -16,17 +16,3 @@ Personal involucrado
 - Darío Díaz:Analista, diseñador y programador
 - Salvador Beron:Analista, diseñador y programador
 
-Grupos de trabajo para Sprint 0 y 1
-
-- Scrum Master: Fabiola Benitez
-- Grupo A: Melisa Apaz, Ana Eugenia Abregú, Marcelo Apaz
-- Grupo B: Enzo Mateo Antunez, Martín Arias, Salvador Beron
-- Grupo C: Fernando Aparicio,Darío Díaz, Dalma Ponce
-
-Nota: La metodologia de trabajo es dividir en grupos que tienen diferentes tipos de tareas, cuando se debe subir a git los cambios un solo integrante lo realiza, ya que tuvimos un problema con el repositorio y tuvimos que salvar la informacion para no perderla y armar el proyecto de cero. 
-
-
-
-
-
-
