@@ -5623,9 +5623,10 @@ body.bg-boxed {
 }
 
 /* footer.style3 */
-footer.style3 {
-  background-image: url(../image/footer.jpg);
-  box-shadow: 5px 15px 30px rgba(0, 0, 0, 1);
+footer.style3 /* Inicio del Footer */
+{
+  background-image: url(../image/footer.jpg);  /* Imagen de fondo del footer */
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 1);/* Sombra sobre el footer para separar el mismo del body */
   max-height: 445px;
 }
 
