@@ -5717,7 +5717,8 @@ footer.style3 .footer-widgets .widget-contact button:hover  /* Al pasar el curso
   color: #c02323;       
 }
 
-footer.style3 .footer-widgets .widget-contact button:hover i {
+footer.style3 .footer-widgets .widget-contact button:hover i /* Configuracion imagen dentro del boton al momento de pasar el cursor sobre el mismo */
+{
   color: #c02323;
 }
 
