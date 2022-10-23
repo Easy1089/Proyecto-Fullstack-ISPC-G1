@@ -10,4 +10,4 @@ Trabajo relacionado con #TK10 Modelado de DB. DER. Modelo Relacional:
     En la tabla "Usuario" se almacenarán todos los usuarios que se podrán loguear al sitio.
 
     Tarea realizada por:
-        Grupo Header: melisapaz (Melisa Apaz)
+        Grupo Header: melisapaz (Melisa Apaz), marceloapaz (Marcelo Apaz)
