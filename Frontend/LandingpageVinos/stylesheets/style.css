@@ -5623,9 +5623,10 @@ body.bg-boxed {
 }
 
 /* footer.style3 */
-footer.style3 {
-  background-image: url(../image/footer.jpg);
-  box-shadow: 5px 15px 30px rgba(0, 0, 0, 1);
+footer.style3 /* Inicio del Footer */
+{
+  background-image: url(../image/footer.jpg);  /* Imagen de fondo del footer */
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 1);/* Sombra sobre el footer para separar el mismo del body */
   max-height: 445px;
 }
 
@@ -9019,9 +9020,8 @@ footer.style3 .footer-widgets .widget-text span {
   font-weight: 500;
 }
 
-/*LOGIN MARCELO*/
-/*Éstos son los estilos que definí para el form del login. Se tuvo en cuenta los 
-estilos ya definidos en el resto de los forms.*/
+/*Autor: Marcelo Apaz*/
+/*Definición de estilos de form de login, luego de revisión/consenso de estilos del resto de los foms.*/
 .body-login {
   font-size: 12px;
   line-height: 1.8;
