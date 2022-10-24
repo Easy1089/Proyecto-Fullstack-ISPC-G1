@@ -1,2 +1,2 @@
 
-Edición de readme para practicar pull request
+Desarrollo que pertenece al issue #TK09 Creacion de Front End Funcional.
