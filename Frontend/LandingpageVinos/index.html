@@ -1,537 +1,425 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-  <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8" />
-    <!--[if IE
+
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8" />
+  <!--[if IE
       ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
     /><![endif]-->
 
-    <title>Sistema de Gestion de Vinos VinotecAr</title>
+  <title>Sistema de Gestion de Vinos VinotecAr</title>
 
-    <meta name="author" content="Proyecto Integrador Fullstack - Grupo 1" />
+  <meta name="author" content="Proyecto Integrador Fullstack - Grupo 1" />
 
-    <!-- Mobile Specific Metas -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
 
-    <!-- Agregado para el modal -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!--Agregado para que ande el modal -->
+  <!-- Agregado para el modal -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--Agregado para que ande el modal -->
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-    <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
-    <!-- Colors -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="stylesheets/colors/color1.css"
-      id="colors"
-    />
-    <!-- Animation Style -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css" />
+  <!-- Theme Style -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+  <!-- Colors -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors" />
+  <!-- Animation Style -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/animate.css" />
 
-    <!-- Favicon and touch icons  -->
-    <link
-      href="icon/icon.png"
-      rel="apple-touch-icon-precomposed"
-      sizes="48x48"
-    />
-    <link href="icon/icon.png" rel="apple-touch-icon-precomposed" />
-    <link href="icon/icon.png" rel="shortcut icon" />
+  <!-- Favicon and touch icons  -->
+  <link href="icon/icon.png" rel="apple-touch-icon-precomposed" sizes="48x48" />
+  <link href="icon/icon.png" rel="apple-touch-icon-precomposed" />
+  <link href="icon/icon.png" rel="shortcut icon" />
 
-    <!-- Slider Revolution CSS Files -->
-    <link rel="stylesheet" type="text/css" href="rev-slider/css/settings.css" />
-    <link rel="stylesheet" type="text/css" href="rev-slider/css/layers.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="rev-slider/css/navigation.css"
-    />
-  </head>
+  <!-- Slider Revolution CSS Files -->
+  <link rel="stylesheet" type="text/css" href="rev-slider/css/settings.css" />
+  <link rel="stylesheet" type="text/css" href="rev-slider/css/layers.css" />
+  <link rel="stylesheet" type="text/css" href="rev-slider/css/navigation.css" />
+</head>
 
 
-  <body>
-    <div id="loading-overlay"><div class="loader"></div></div>
-  
- <!-- Grupo B trabaja Header con los links para las secciones de formularios -->
-    <!-- Revisión de código HTML de equipo B. Autor: Marcelo Apaz -->
-    <!-- /.loading-overlay -->
-    <header class="style1">
-      <div id="site-header">
-        <div class="container-fluid">
-          <a href="index.html" class="logo"></a>
-          <div class="mobile-button"><span></span></div>
-          <div class="nav-wrap">
-            <nav id="mainnav" class="mainnav">
-              <ul class="menu">
-                <li class="active a">
-                  <a href="#" title="">INICIO</a>
-                  <ul class="sub-menu">
-                    <li class="active">
-                      <a href="index.html" title=""></a>
-                    </li>
-                   
-                  </ul>
-                  <!-- /.sub-menu -->
-                </li>
-                <li class="active">
-                    <a href="#" title="">Alta Usuarios</a>
-                    <ul class="sub-menu">
-                      <li><a href="altausuario.html" title="">Alta Usuarios</a></li>
-                    </ul>
-                    <!-- /.sub-menu -->
-               
-                <li class="active">
-                  <a href="#" title="">Login</a>
-                  <ul class="sub-menu">
-                    <li><a href="login-1.html" title="">Login</a></li>
-                  </ul>
-                  <!-- /.sub-menu -->
-                </li>
-              </ul>
-            </nav>
-          </div>
-         
+<body>
+  <div id="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Grupo B trabaja Header con los links para las secciones de formularios -->
+  <!-- Revisión de código HTML de equipo B. Autor: Marcelo Apaz -->
+  <!-- /.loading-overlay -->
+  <header class="style1">
+    <div id="site-header">
+      <div class="container-fluid">
+        <a href="index.html" class="logo"></a>
+        <div class="mobile-button"><span></span></div>
+        <div class="nav-wrap">
+          <nav id="mainnav" class="mainnav">
+            <ul class="menu">
+              <li class="active a">
+                <a href="#" title="">INICIO</a>
+                <ul class="sub-menu">
+                  <li class="active">
+                    <a href="index.html" title=""></a>
+                  </li>
+
+                </ul>
+                <!-- /.sub-menu -->
+              </li>
+              <li class="active">
+                <a href="#" title="">Alta Usuarios</a>
+                <ul class="sub-menu">
+                  <li><a href="altausuario.html" title="">Alta Usuarios</a></li>
+                </ul>
+                <!-- /.sub-menu -->
+
+              <li class="active">
+                <a href="#" title="">Login</a>
+                <ul class="sub-menu">
+                  <li><a href="login-1.html" title="">Login</a></li>
+                </ul>
+                <!-- /.sub-menu -->
+              </li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
-    </header>
-<!-- Grupo B - final de bloque de codigo-->
+  </header>
+  <!-- Grupo B - final de bloque de codigo-->
 
-    <!-- Grupo C trabaja Body cambiando imagenes y textos , sin tocar la animacion de JS que tienen las 3 imagenes -->
-    <!-- Cambio de imagenes realizado equipo C Autor: Salvador Berón  -->
-    <div class="flat-slider style1">
+  <!-- Grupo C trabaja Body cambiando imagenes y textos , sin tocar la animacion de JS que tienen las 3 imagenes -->
+  <!-- Cambio de imagenes realizado equipo C Autor: Salvador Berón  -->
+  <div class="flat-slider style1">
 
-      <!-- SLIDER -->
-      <div class="rev_slider_wrapper fullwidthbanner-container">
-        <div id="rev-slider1" class="rev_slider fullwidthabanner">
-          <ul>
-            <!-- Slide 1 -->
-            <li data-transition="random">
-              <!-- Main Image --><img
-                src="image/vino 2 final.png"
-                alt=""
-                data-bgposition="center center"
-                data-no-retina
-              />
-              <div class="overlay"></div>
-              <!-- Layers -->
-              <div
-                class="tp-caption tp-resizeme text-ffb922 font-rubik font-weight-500 wellcome"
-                data-x="['left','left','left','center']"
-                data-hoffset="['2','4','4','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['-132','-118','-98','-78']"
-                data-fontsize="['36','20','20','16']"
-                data-lineheight="['48','48','28','14']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="700"
-                data-splitin="none"
-                data-splitout="none"
-                data-paddingleft="['3','3','3','3']"
-                data-responsive_offset="on"
-              >
-                Bienvenido a Le Mone
-              </div>
-              <div
-                class="tp-caption tp-resizeme font-rubik font-weight-700 best"
-                data-x="['left','left','left','center']"
-                data-hoffset="['-4','-4','-4','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['-60','-60','-50','-40']"
-                data-fontsize="['72','60','40','32']"
-                data-lineheight="['80','80','45','35']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="1000"
-                data-splitin="none"
-                data-splitout="none"
-                data-responsive_offset="on"
-              >
-                <a href="#" class="text-white">Los mejores vinos</a>
-              </div>
-              <div
-                class="tp-caption tp-resizeme text-white font-rubik font-weight-400 text-wizym"
-                data-x="['left','left','left','center']"
-                data-hoffset="['0','-2','-2','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['27','27','27','17']"
-                data-fontsize="['18','18','16','14']"
-                data-lineheight="['32','32','26','22']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="1000"
-                data-splitin="none"
-                data-splitout="none"
-                data-responsive_offset="on"
-                data-paddingright="['550','155','50','2']"
-              >
-                Le mone ofrece un catalogo extenso con mas de 500 tipos de vino de prestigiosas marcas
-              </div>
-              <div
-                class="tp-caption"
-                data-x="['left','left','left','center']"
-                data-hoffset="['0','-4','-4','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['102','102','92','70']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="1000"
-                data-splitin="none"
-                data-splitout="none"
-                data-responsive_offset="on"
-                data-paddingtop="['50','50','50','50']"
-                data-paddingbottom="['50','50','50','50']"
-              >
-               
-              </div>
-            </li>
-            <!-- /End Slide 1 -->
-            
-            <!-- Slide 2 -->
+    <!-- SLIDER -->
+    <div class="rev_slider_wrapper fullwidthbanner-container">
+      <div id="rev-slider1" class="rev_slider fullwidthabanner">
+        <ul>
+          <!-- Slide 1 -->
+          <li data-transition="random">
+            <!-- Main Image --><img src="image/vino 2 final.png" alt="" data-bgposition="center center"
+              data-no-retina />
+            <div class="overlay"></div>
+            <!-- Layers -->
+            <div class="tp-caption tp-resizeme text-ffb922 font-rubik font-weight-500 wellcome"
+              data-x="['left','left','left','center']" data-hoffset="['2','4','4','0']"
+              data-y="['middle','middle','middle','middle']" data-voffset="['-132','-118','-98','-78']"
+              data-fontsize="['36','20','20','16']" data-lineheight="['48','48','28','14']" data-width="full"
+              data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="700" data-splitin="none"
+              data-splitout="none" data-paddingleft="['3','3','3','3']" data-responsive_offset="on">
+              Bienvenido a Le Mone
+            </div>
+            <div class="tp-caption tp-resizeme font-rubik font-weight-700 best" data-x="['left','left','left','center']"
+              data-hoffset="['-4','-4','-4','0']" data-y="['middle','middle','middle','middle']"
+              data-voffset="['-60','-60','-50','-40']" data-fontsize="['72','60','40','32']"
+              data-lineheight="['80','80','45','35']" data-width="full" data-height="none" data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none"
+              data-splitout="none" data-responsive_offset="on">
+              <a href="#" class="text-white">Los mejores vinos</a>
+            </div>
+            <div class="tp-caption tp-resizeme text-white font-rubik font-weight-400 text-wizym"
+              data-x="['left','left','left','center']" data-hoffset="['0','-2','-2','0']"
+              data-y="['middle','middle','middle','middle']" data-voffset="['27','27','27','17']"
+              data-fontsize="['18','18','16','14']" data-lineheight="['32','32','26','22']" data-width="full"
+              data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none"
+              data-splitout="none" data-responsive_offset="on" data-paddingright="['550','155','50','2']">
+              Le mone ofrece un catalogo extenso con mas de 500 tipos de vino de prestigiosas marcas
+            </div>
+            <div class="tp-caption" data-x="['left','left','left','center']" data-hoffset="['0','-4','-4','0']"
+              data-y="['middle','middle','middle','middle']" data-voffset="['102','102','92','70']" data-width="full"
+              data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none"
+              data-splitout="none" data-responsive_offset="on" data-paddingtop="['50','50','50','50']"
+              data-paddingbottom="['50','50','50','50']">
 
-            <li data-transition="random">
-              <!-- Main Image --><img
-                src="image/Vino final copia.png"
-                alt=""
-                data-bgposition="center center"
-                data-no-retina
-              />
-              <div class="overlay"></div>
-              <!-- Layers -->
-              <div
-                class="tp-caption tp-resizeme text-ffb922 font-rubik font-weight-500 wellcome"
-                data-x="['left','left','left','center']"
-                data-hoffset="['2','4','4','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['-132','-118','-98','-78']"
-                data-fontsize="['36','20','20','16']"
-                data-lineheight="['48','48','28','14']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="700"
-                data-splitin="none"
-                data-splitout="none"
-                data-paddingleft="['3','3','3','3']"
-                data-responsive_offset="on"
-              >
-                Bienvenido a Le Mone
-              </div>
-              <div
-                class="tp-caption tp-resizeme font-rubik font-weight-700 best"
-                data-x="['left','left','left','center']"
-                data-hoffset="['-4','-4','-4','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['-60','-60','-50','-40']"
-                data-fontsize="['72','60','40','32']"
-                data-lineheight="['80','80','45','35']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="1000"
-                data-splitin="none"
-                data-splitout="none"
-                data-responsive_offset="on"
-              >
-               
-              </div>
-              <div
-                class="tp-caption tp-resizeme text-white font-rubik font-weight-400 text-wizym"
-                data-x="['left','left','left','center']"
-                data-hoffset="['0','-2','-2','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['27','27','27','17']"
-                data-fontsize="['18','18','16','14']"
-                data-lineheight="['32','32','26','22']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="1000"
-                data-splitin="none"
-                data-splitout="none"
-                data-responsive_offset="on"
-                data-paddingright="['550','155','50','2']"
-              >
+            </div>
+          </li>
+          <!-- /End Slide 1 -->
+
+          <!-- Slide 2 -->
+
+          <li data-transition="random">
+            <!-- Main Image --><img src="image/Vino final copia.png" alt="" data-bgposition="center center"
+              data-no-retina />
+            <div class="overlay"></div>
+            <!-- Layers -->
+            <div class="tp-caption tp-resizeme text-ffb922 font-rubik font-weight-500 wellcome"
+              data-x="['left','left','left','center']" data-hoffset="['2','4','4','0']"
+              data-y="['middle','middle','middle','middle']" data-voffset="['-132','-118','-98','-78']"
+              data-fontsize="['36','20','20','16']" data-lineheight="['48','48','28','14']" data-width="full"
+              data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="700" data-splitin="none"
+              data-splitout="none" data-paddingleft="['3','3','3','3']" data-responsive_offset="on">
+              Bienvenido a Le Mone
+            </div>
+            <div class="tp-caption tp-resizeme font-rubik font-weight-700 best" data-x="['left','left','left','center']"
+              data-hoffset="['-4','-4','-4','0']" data-y="['middle','middle','middle','middle']"
+              data-voffset="['-60','-60','-50','-40']" data-fontsize="['72','60','40','32']"
+              data-lineheight="['80','80','45','35']" data-width="full" data-height="none" data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none"
+              data-splitout="none" data-responsive_offset="on">
+
+            </div>
+            <div class="tp-caption tp-resizeme text-white font-rubik font-weight-400 text-wizym"
+              data-x="['left','left','left','center']" data-hoffset="['0','-2','-2','0']"
+              data-y="['middle','middle','middle','middle']" data-voffset="['27','27','27','17']"
+              data-fontsize="['18','18','16','14']" data-lineheight="['32','32','26','22']" data-width="full"
+              data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none"
+              data-splitout="none" data-responsive_offset="on" data-paddingright="['550','155','50','2']">
               ¿Quien se ha tomado todo el vino?
-              </div>
-              <div
-                class="tp-caption"
-                data-x="['left','left','left','center']"
-                data-hoffset="['0','-4','-4','0']"
-                data-y="['middle','middle','middle','middle']"
-                data-voffset="['102','102','92','70']"
-                data-width="full"
-                data-height="none"
-                data-whitespace="normal"
-                data-transform_idle="o:1;"
-                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                data-mask_in="x:0px;y:[100%];"
-                data-mask_out="x:inherit;y:inherit;"
-                data-start="1000"
-                data-splitin="none"
-                data-splitout="none"
-                data-responsive_offset="on"
-                data-paddingtop="['50','50','50','50']"
-                data-paddingbottom="['50','50','50','50']"
-              >
-                
-              </div>
+            </div>
+            <div class="tp-caption" data-x="['left','left','left','center']" data-hoffset="['0','-4','-4','0']"
+              data-y="['middle','middle','middle','middle']" data-voffset="['102','102','92','70']" data-width="full"
+              data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+              data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none"
+              data-splitout="none" data-responsive_offset="on" data-paddingtop="['50','50','50','50']"
+              data-paddingbottom="['50','50','50','50']">
+
+            </div>
+          </li>
+          <!-- /End Slide 2 -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /.flat-slider -->
+
+  <!-- Grupo C - final de bloque de codigo parte de galeria de imagenes-->
+
+  <div class="main-homepage-1">
+    <section class="flat-about style1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-7">
+            <div class="image-single">
+              <img src="image/homepage144 copia.png" alt="image" />
+            </div>
+          </div>
+          <!-- /col-lg-7 -->
+          <div class="col-lg-5 col-md-5">
+            <div class="flat-divider margin-top50px"></div>
+            <div class="flat-textbox">
+              <h3 class="textbox-title"><a href="#">Nuestra forma Le Mone </a></h3>
+              <h1 class="textbox-main"><a href="#">Bienvenido a Le Mone </a></h1>
+              <p>
+                Llevamos más de 10 años dentro del mercado como el sistema de gestion de stock de vinoteca
+                más prestigioso del país y nos enorgullecemos de poder ofrecer al publico
+                distintas variedades de gestion de stock al mejor precio del mercado.
+              </p>
+            </div>
+
+          </div>
+          <!-- /information -->
+        </div>
+        <!-- /col-lg-5 -->
+      </div>
+      <!-- /row-->
+  </div>
+  <!-- /container -->
+  </section>
+  <!-- /flat-about -->
+  </div>
+  <!-- Grupo C - final de bloque de codigo-->
+
+  <!-- Grupo A trabaja footer -->
+
+
+  <footer class="style3">
+    <div class="container">
+      <div class="footer-widgets">
+
+        <div class="widget widget-icon">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </li>
-            <!-- /End Slide 2 -->
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <!-- Se agrego un icono extraido de una pagina web de uso gratuito -->
+            </li>
+
+
           </ul>
         </div>
-      </div>
-    </div>
-    <!-- /.flat-slider -->
-
-    <!-- Grupo C - final de bloque de codigo parte de galeria de imagenes-->
-
-    <div class="main-homepage-1">
-      <section class="flat-about style1">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-7">
-              <div class="image-single">
-                <img src="image/homepage144 copia.png" alt="image" />
-              </div>
-            </div>
-            <!-- /col-lg-7 -->
-            <div class="col-lg-5 col-md-5">
-              <div class="flat-divider margin-top50px"></div>
-              <div class="flat-textbox">
-                <h3 class="textbox-title"><a href="#">Nuestra forma Le Mone </a></h3>
-                <h1 class="textbox-main"><a href="#">Bienvenido a Le Mone </a></h1>
-                <p>
-                  Llevamos más de 10 años dentro del mercado como el sistema de gestion de stock de vinoteca
-                  más prestigioso del país y nos enorgullecemos de poder ofrecer al publico 
-                  distintas variedades de gestion de stock al mejor precio del mercado.
-                </p>
-              </div>
-              
-              </div>
-              <!-- /information -->
-            </div>
-            <!-- /col-lg-5 -->
-          </div>
-          <!-- /row-->
+        <!-- /widget-icon -->
+        <div class="widget widget-title">
+          <h2>Novedades Suscribirse</h2>
         </div>
-        <!-- /container -->
-      </section>
-      <!-- /flat-about -->
-    </div>
-   <!-- Grupo C - final de bloque de codigo-->
+        <!-- /widget-title -->
+        <div class="widget widget-contact">
+          <input type="search" id="search-footer" placeholder="Email" /><button type="submit">
+            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+          </button>
+        </div>
 
-    <!-- Grupo A trabaja footer -->
-    <footer class="style3">
-      <div class="container">
-        <div class="footer-widgets">
-        
-          <div class="widget widget-icon">
-            <ul>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-instagram" aria-hidden="true"></i
-                ></a>
-              </li>
-              
-              
-            </ul>
-          </div>
-          <!-- /widget-icon -->
-          <div class="widget widget-title"><h2>Novedades Suscribirse</h2></div>
-          <!-- /widget-title -->
-          <div class="widget widget-contact">
-            <input
-              type="search"
-              id="search-footer"
-              placeholder="Email"
-            /><button type="submit">
-              <i class="fa fa-location-arrow" aria-hidden="true"></i>
-            </button>
-          </div>
-
-          <!-- /widget-contact -->
-          <div class="widget widget-menu">
-            <ul>
-              <li >
-                <a data-bs-toggle="modal" data-bs-target="#nosotros" style="cursor:pointer;">Sobre Nosotros</a>
-                <div class="modal" id="nosotros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="nosotrosLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content model_style_content_footer">
-                      <div class="modal-header">
-                        <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="nosotrosLabel">
-                            Sobre nosotros</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p style="text-align:justify; font-size: 15px;">   <!-- Se coloco una aliniacion de texto justificada y un tamaño de fuente de 15 px -->
-                          Llevamos más de 10 años dentro del mercado como una de las vinotecas
-                          más prestigiadas del país y nos enorgullecemos de poder ofrecer al publico 
-                          distintas variedades de vinos al mejor precio del mercado.
-                        </p>
-                      </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <a data-bs-toggle="modal" data-bs-target="#viniedo" style="cursor:pointer;">Viñedos</a>
-                <div class="modal " id="viniedo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="viniedoLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content model_style_content_footer">
-                      <div class="modal-header">
-                        <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="viniedoLabel">
-                            Viñedos</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p style="text-align:justify; font-size: 15px;">
-                          Contamos con nuestros viñedos y bodegas privadas, las cuales pueden visitadas por medio del famoso camino del vino. Como ser Terra Camiare,
-                          La Caroyense, Chacra de luna. En dichas visitas se puede disfrutar de degustaciones al aire libre.
-                        </p>
-                      </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <a data-bs-toggle="modal" data-bs-target="#celebraciones" style="cursor:pointer;">Celebraciones</a>
-                <div class="modal " id="celebraciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="celebracionesLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content model_style_content_footer">
-                      <div class="modal-header">
-                        <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="celebracionesLabel">
-                            Celebraciones</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p style="text-align:justify; font-size: 15px;">
-                          Dos veces al año realizamos celebraciones especiales con catacion de vinos y conferencias con los principales profesionales de la industria.
-                        </p>    
-                      </div>
+        <!-- /widget-contact -->
+        <div class="widget widget-menu">
+          <ul>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#nosotros" style="cursor:pointer;">Sobre Nosotros</a>
+              <div class="modal" id="nosotros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="nosotrosLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content model_style_content_footer">
+                    <div class="modal-header">
+                      <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="nosotrosLabel">
+                        Sobre nosotros</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align:justify; font-size: 15px;">
+                        <!-- Se coloco una aliniacion de texto justificada y un tamaño de fuente de 15 px -->
+                        Llevamos más de 10 años dentro del mercado como una de las vinotecas
+                        más prestigiadas del país y nos enorgullecemos de poder ofrecer al publico
+                        distintas variedades de vinos al mejor precio del mercado.
+                      </p>
                     </div>
                   </div>
                 </div>
-              </li> 
+            </li>
 
-              <li class="contact">
-                <a data-bs-toggle="modal" data-bs-target="#contacto" style="cursor:pointer;">Contacto</a>
-                <div class="modal " id="contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactoLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content model_style_content_footer">
-                      <div class="modal-header">
-                        <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="contactoLabel">
-                            Contacto</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <b style="font-size: 20px">Direccion:</b></br> <!-- Tamaño de fuente de 20 px -->
-                        <p>742 Evergreen Terrace</p>  </br>
-                        <b style="font-size: 20px">Numero Telefono:</b></br>
-                        <p>1-677-124-44227</p></br>
-                        <b style="font-size: 20px">Horarios:</b></br>
-                        <p>Lunes a Lunes de 10:00 - 10:01</p> 
-                      </div>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#viniedo" style="cursor:pointer;">Viñedos</a>
+              <div class="modal " id="viniedo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="viniedoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content model_style_content_footer">
+                    <div class="modal-header">
+                      <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="viniedoLabel">
+                        Viñedos</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align:justify; font-size: 15px;">
+                        Contamos con nuestros viñedos y bodegas privadas, las cuales pueden visitadas por medio del
+                        famoso camino del vino. Como ser Terra Camiare,
+                        La Caroyense, Chacra de luna. En dichas visitas se puede disfrutar de degustaciones al aire
+                        libre.
+                      </p>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <!-- /widget-about -->
-          <div class="widget widget-text">
-            <span>
-              © 2022 Creado por Suquia River Fish G9. Todos los derechos
-              <b>Reservados</b>
-              </span>
-          </div>
+            </li>
+
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#celebraciones" style="cursor:pointer;">Celebraciones</a>
+              <div class="modal " id="celebraciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="celebracionesLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content model_style_content_footer">
+                    <div class="modal-header">
+                      <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="celebracionesLabel">
+                        Celebraciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align:justify; font-size: 15px;">
+                        Dos veces al año realizamos celebraciones especiales con catacion de vinos y conferencias con
+                        los principales profesionales de la industria.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="contact">
+              <a data-bs-toggle="modal" data-bs-target="#contacto" style="cursor:pointer;">Contacto</a>
+              <div class="modal " id="contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="contactoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content model_style_content_footer">
+                    <div class="modal-header">
+                      <h1 class="modal-title model_style_tittle_h1_footer fs-3" id="contactoLabel">
+                        Contacto</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <b style="font-size: 20px">Direccion:</b></br> <!-- Tamaño de fuente de 20 px -->
+                      <p>742 Evergreen Terrace</p> </br>
+                      <b style="font-size: 20px">Numero Telefono:</b></br>
+                      <p>1-677-124-44227</p></br>
+                      <b style="font-size: 20px">Horarios:</b></br>
+                      <p>Lunes a Lunes de 10:00 - 10:01</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <!-- /footer-widgets -->
+        <!-- /widget-about -->
+        <div class="widget widget-text">
+          <span>
+            © 2022 Creado por Suquia River Fish G9. Todos los derechos
+            <b>Reservados</b>
+          </span>
+        </div>
       </div>
-      <!-- /container -->
-    </footer>
-    <a id="scroll-top"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-    <!-- /#scroll-top -->
+      <!-- /footer-widgets -->
+    </div>
+    <!-- /container -->
+  </footer>
+  <a id="scroll-top"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+  <!-- /#scroll-top -->
 
-   <!-- Grupo A - final de bloque de codigo-->
-    
-    <!-- No modificar esta parte de codigo -->
+  <!-- Grupo A - final de bloque de codigo-->
 
-    <script src="javascript/jquery.min.js"></script>
-    <script src="javascript/rev-slider.js"></script>
-    <script src="javascript/owl.carousel.min.js"></script>
-    <script src="javascript/jquery-countTo.js"></script>
-    <script src="javascript/jquery-waypoints.js"></script>
-    <script src="javascript/bootstrap.min.js"></script>
-    <script src="javascript/jquery.easing.js"></script>
-    <script src="javascript/main.js"></script>
-    <!-- Slider -->
-    <script src="rev-slider/js/jquery.themepunch.tools.min.js"></script>
-    <script src="rev-slider/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="javascript/rev-slider.js"></script>
-    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
-    <script src="rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <!-- No modificar esta parte de codigo -->
 
-    <!-- Agregado para el modal -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!--Agregado para que ande el modal -->
-    <script src="rev-slider/js/extensions/revolution.extension.video.min.js"></script>
-  </body>
+  <script src="javascript/jquery.min.js"></script>
+  <script src="javascript/rev-slider.js"></script>
+  <script src="javascript/owl.carousel.min.js"></script>
+  <script src="javascript/jquery-countTo.js"></script>
+  <script src="javascript/jquery-waypoints.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <script src="javascript/jquery.easing.js"></script>
+  <script src="javascript/main.js"></script>
+  <!-- Slider -->
+  <script src="rev-slider/js/jquery.themepunch.tools.min.js"></script>
+  <script src="rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="javascript/rev-slider.js"></script>
+  <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
+  <script src="rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+
+  <!-- Agregado para el modal -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!--Agregado para que ande el modal -->
+  <script src="rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+</body>
+
 </html>
