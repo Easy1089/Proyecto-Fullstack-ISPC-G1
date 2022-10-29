@@ -353,7 +353,8 @@ input[type="color"] {
   border: 1px solid #e5e5e5;
   height: 46px;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 5px; /*Modificado*/
+  margin-top: 10px; /*Agregado*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -8951,6 +8952,7 @@ footer.style3 .footer-widgets .widget-text span {
   color: #ffffff;
   font-family: "Marcellus";
   letter-spacing: 2px;
+  margin-top: 15px; /*AGREGADO*/
 }
 
 .terminosycondiciones-estilosforms a {
@@ -9049,7 +9051,7 @@ footer.style3 .footer-widgets .widget-text span {
   flex-direction: column;
   overflow: hidden;
   width: 430px;
-  height: 520px;
+  height: 650px; /* Se mofico para que entren los iconos */
   backdrop-filter: blur(1rem);
   background-color: rgba(255, 255, 255, 0.060);
   color: var(--white-text);
@@ -9143,4 +9145,16 @@ footer.style3 .footer-widgets .widget-text span {
   text-align: center;
   margin-bottom: 5px;
   letter-spacing: 3px;
+}
+
+.invalid-feedback >.alerta-error /* Configuracion de alerta */
+{
+  font-family: 'Source Sans Pro';
+  font-size: 15px; 
+  text-align: center;
+  color: #fff; /*Color texto*/
+  background: rgba(133, 15, 15, 0.8);
+  border-radius: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
