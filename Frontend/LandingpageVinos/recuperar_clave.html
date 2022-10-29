@@ -10,9 +10,13 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
         <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
         <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors" />
-        <link href="icon/png.png" rel="shortcut icon" />
+        <link href="icon/icon.png" rel="shortcut icon" />
         <link rel="stylesheet" type="text/css" href="rev-slider/css/settings.css" />
         <link rel="stylesheet" type="text/css" href="rev-slider/css/layers.css" />
+
+        <!-- Agregado boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
 
     <body class="body-estilosforms">
@@ -20,12 +24,17 @@
             <section class="estilosforms">
                 <div class="container-estilosforms">
                     <div class="content-estilosforms">
-                        <form method="POST" id="estilosforms-form" class="form-estilosforms">
+                        <form class="form-estilosforms needs-validation" novalidate> <!-- Se le agrego la clase needs-validation para que se puedan utilizar las validaciones de boostrap -->
                             <h2 class="h2-estilosforms">Recuperar Contraseña</h2>
+
                             <div class="form-group-estilosforms">
-                                <input type="email" class="form-input-estilosforms" name="email" id="email"
-                                    placeholder="Ingrese email" />
-                            </div>                                                      
+                                <input type="email" class="form-input-estilosforms form-control" name="email" id="email"
+                                    placeholder="Ingrese email" required/><!-- Clase form-control que valida en caso de error o si es correcto. Al ser un campo obligatorio se coloco required, sirve para la validacion -->
+                                <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
+                                    <p class="alerta-error"> Por favor ingrese un Email</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
+                                </div>
+                            </div> 
+
                             <div class="form-group-estilosforms">
                                 <button type="submit" name="submit" id="submit" class="boton-estilosforms">Enviar</button>
                             </div>
@@ -38,6 +47,22 @@
                 </div>
             </section>
         </div>
+        <!-- Java Script que realiza las validaciones -->
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+    </script>
     </body>
 
 </html>
