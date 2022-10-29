@@ -15,19 +15,36 @@
     <link href="icon/icon.png" rel="shortcut icon" />
     <link rel="stylesheet" type="text/css" href="rev-slider/css/settings.css" />
     <link rel="stylesheet" type="text/css" href="rev-slider/css/layers.css" />
+
+    <!-- Agregado boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body class="body-login">
     <div class="container-login">
         <div class="login">
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="content-login">
                     <i class="fa fa-lock" aria-hidden="true"></i>
                     <h1 class="h1-login">Login</h1>
-                    <p>Usuario</p>
-                    <input type="text" class="text-login" name="text-login" id="text-login-usuario">
-                    <p>Contraseña</p>
-                    <input type="password" class="text-login" name="text-login" id="text-login-password">
+
+                    <div style="width:100%;">
+                        <p>Usuario</p>
+                        <input type="text" class="text-login form-control" name="text-login" id="text-login-usuario" required>
+                        <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
+                            <p class="alerta-error"> Por favor ingrese un Usuario</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
+                        </div>
+                    </div>
+
+                    <div style="width:100%;">
+                        <p>Contraseña</p>
+                        <input type="password" class="text-login form-control" name="text-login" id="text-login-password" required>
+                        <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
+                            <p class="alerta-error"> Por favor ingrese una Contraseña</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
+                        </div>
+                    </div>
+
                     <button type="submit" name="submit" id="submit" class="button-login">Empezar</button>
 
                 </div>
@@ -62,6 +79,22 @@
             </form>
         </div>
     </div>
+    <!-- Java Script que realiza las validaciones -->
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+    </script>
 </body>
 
 </html>
