@@ -5,9 +5,9 @@ Proyecto realizado con:
 ** sqlitebrowser, para manejo de bases de datos
 
 
-Nota >  El aplicativo esta desarrollado sin el login de usuario, ya que solo se solicito el CRUD en python y se agrego 
+Nota: El aplicativo de escritorio esta desarrollado sin el login de usuario, ya que solo se solicito el CRUD en python y se agrego 
 conexion a la base.
 
-Autor>  Fabiola Benitez >  Easy1089
+Autor: Fabiola Benitez >  Easy1089
 
 
