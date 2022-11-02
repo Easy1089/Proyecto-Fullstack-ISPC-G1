@@ -12,7 +12,7 @@ class Product:
     def __init__(self, window):
         # Initializations 
         self.wind = window
-        self.wind.title('STOCK')
+        self.wind.title('LeMone Gestion de STOCK')
 
         #######
         # Add Product 
@@ -124,7 +124,7 @@ class Product:
             if (name_search[0] == cad[i]):
                 return 1
         return 0
-
+    # CRUD and DB conextion for CRUD in Python 
     # Search Product
     def search_product(self, name_search):
         if name_search != '':
