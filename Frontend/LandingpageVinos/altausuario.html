@@ -24,70 +24,44 @@
         <section class="estilosforms">
             <div class="container-estilosforms">
                 <div class="content-estilosforms">
-                    <form class="form-estilosforms needs-validation" novalidate>
+                    <form class="form-estilosforms" id = "form" name = "formRegister" novalidate>
                         <h2 class="h2-estilosforms">Crear tu cuenta</h2>
 
                         <div class="form-group-estilosforms">
-                            <input type="text" class="form-input-estilosforms form-control" name="usuario" id="usuario"
-                                placeholder="Usuario" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor ingrese un Usuario</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
+                            <input type = "text" class = "form-input-estilosforms " name = "usuario" id= "usuario"  placeholder= "Usuario" required/>
                         </div>
 
                         <div class="form-group-estilosforms">
-                            <input type="password" class="form-input-estilosforms form-control" name="password" id="password"
-                                placeholder="Password" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor ingrese una Contraseña</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
+                            <input type = "password" class = "form-input-estilosforms " name = "password" id= "password"
+                                placeholder = "Password" required/>               
                         </div>
 
                         <div class="form-group-estilosforms">
-                            <input type="password" class="form-input-estilosforms form-control" name="re_password" id="re_password"
-                                placeholder="Repetí tu password" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor repita su contraseña</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
+                            <input type = "password" class = "form-input-estilosforms " name = "re_password" id = "re_password"
+                                placeholder = "Repetí tu password" required/>
                         </div>
 
                         <div class="form-group-estilosforms">
-                            <input type="text" class="form-input-estilosforms form-control" name="name" id="name"
+                            <input type = "text" class = "form-input-estilosforms " name = "nombre" id = "nombre"
                                 placeholder="Tu nombre" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor ingrese un Nombre</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
                         </div>
 
                         <div class="form-group-estilosforms">
-                            <input type="text" class="form-input-estilosforms form-control" name="apellido" id="apellido"
+                            <input type = "text" class= "form-input-estilosforms " name = "apellido" id = "apellido"
                                 placeholder="Tu apellido" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor ingrese un Apellido</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
                         </div>
 
                         <div class="form-group-estilosforms">
-                            <input type="email" class="form-input-estilosforms form-control" name="email" id="email"
+                            <input type = "email" class = "form-input-estilosforms " name = "email" id = "email"
                                 placeholder="Tu e-mail" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor ingrese un Email</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
                         </div>
                         <div class="form-group-estilosforms">
-                            <input type="tel" class="form-input-estilosforms form-control" name="telefono" id="telefono"
+                            <input type = "tel" class="form-input-estilosforms " name = "telefono" id = "telefono"
                                 placeholder="Tu teléfono" required/>
-                        <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                            <p class="alerta-error"> Por favor ingrese un Teléfono</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                        </div>
                         </div>
 
                         <div class="form-group-estilosforms">
-                            <input type="checkbox" name="terminosycondiciones" id="terminosycondiciones"
-                                class="terminosycondiciones-estilosforms" required/>
-                            <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                <p class="alerta-error"> Por favor Aceptar los Términos</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                            </div>
+                            <input type="checkbox" name = "terminos" id = "terminos" class="terminosycondiciones-estilosforms" required/>
                             <label for="terminosycondiciones" class="terminosycondiciones-estilosforms">
                                 Acepto todos los términos de
                                 <a href="#" class="terminos-estilosforms">Términos del servicio</a>
@@ -96,6 +70,7 @@
 
                         <div class="form-group-estilosforms">
                             <button type="submit" name="submit" id="submit" class="boton-estilosforms">Aceptar</button>
+                            <p class="advertencia" id = "warnings"></p>
                         </div>
                     </form>
                     <p class="loginaqui-estilosforms">
@@ -107,21 +82,7 @@
         </section>
     </div>
     <!-- Java Script que realiza las validaciones -->
-    <script>
-        (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-                }, false)
-            })
-            })()
-    </script>
+    <script src="../LandingpageVinos/javascript/Validaciones.js"></script>
 </body>
 
 </html>

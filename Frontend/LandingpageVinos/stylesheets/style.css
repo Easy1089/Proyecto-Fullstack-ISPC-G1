@@ -9051,7 +9051,7 @@ footer.style3 .footer-widgets .widget-text span {
   flex-direction: column;
   overflow: hidden;
   width: 430px;
-  height: 650px; /* Se mofico para que entren los iconos */
+  height: 650px; 
   backdrop-filter: blur(1rem);
   background-color: rgba(255, 255, 255, 0.060);
   color: var(--white-text);
@@ -9066,6 +9066,7 @@ footer.style3 .footer-widgets .widget-text span {
   justify-content: space-between;
   height: 80%;
   letter-spacing: .1px;
+  padding-bottom: 0px;  /* Se modifico */
 }
 
 .content-login i {
@@ -9073,7 +9074,8 @@ footer.style3 .footer-widgets .widget-text span {
   color: #ffffff;
 }
 
-.content-login p {
+.content-login label  /* Renombrado */
+{
   font-size: 17px;
   color: rgba(0, 0, 0, .9);
   align-self: flex-start;
@@ -9102,6 +9104,7 @@ footer.style3 .footer-widgets .widget-text span {
   background: rgba(255, 255, 255, 255);
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 5);
   font-weight: 600;
+  margin-bottom: 30px; /*Agregado*/
 }
 
 .button-login:hover {
@@ -9146,15 +9149,35 @@ footer.style3 .footer-widgets .widget-text span {
   margin-bottom: 5px;
   letter-spacing: 3px;
 }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.invalid-feedback >.alerta-error /* Configuracion de alerta */
+.advertencia
+{
+  margin-top: 20px;
+}
+
+.alertajs/* Configuracion de alerta */
 {
   font-family: 'Source Sans Pro';
   font-size: 15px; 
   text-align: center;
-  color: #fff; /*Color texto*/
   background: rgba(133, 15, 15, 0.8);
+  color: rgba(255, 255, 255, .9);
   border-radius: 10px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.correctjs/* Configuracion de alerta */
+{
+  font-family: 'Source Sans Pro';
+  font-size: 15px; 
+  text-align: center;
+  background: green;
+  color: rgba(255, 255, 255, .9);
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }

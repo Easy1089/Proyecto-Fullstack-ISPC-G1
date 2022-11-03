@@ -24,22 +24,20 @@
             <section class="estilosforms">
                 <div class="container-estilosforms">
                     <div class="content-estilosforms">
-                        <form class="form-estilosforms needs-validation" novalidate> <!-- Se le agrego la clase needs-validation para que se puedan utilizar las validaciones de boostrap -->
+                        <form class="form-estilosforms " id = "form" name = "formRecuperar" novalidate> <!-- Se le agrego la clase needs-validation para que se puedan utilizar las validaciones de boostrap -->
                             <h2 class="h2-estilosforms">Recuperar Contraseña</h2>
 
                             <div class="form-group-estilosforms">
-                                <input type="email" class="form-input-estilosforms form-control" name="email" id="email"
+                                <input type = "email" class = "form-input-estilosforms " name = "email" id = "email"
                                     placeholder="Ingrese email" required/><!-- Clase form-control que valida en caso de error o si es correcto. Al ser un campo obligatorio se coloco required, sirve para la validacion -->
-                                <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                                    <p class="alerta-error"> Por favor ingrese un Email</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                                </div>
                             </div> 
 
                             <div class="form-group-estilosforms">
-                                <button type="submit" name="submit" id="submit" class="boton-estilosforms">Enviar</button>
+                                <button type = "submit" name = "submit" id = "submit" class = "boton-estilosforms">Enviar</button>
+                                <p class = "advertencia" id = "warnings"></p>
                             </div>
                         </form>
-                        <p class="loginaqui-estilosforms">
+                        <p class = "loginaqui-estilosforms">
                             ¿Ya tienes una cuenta?
                             <a href="login-1.html" class="loginaqui-link-estilosforms">Ingresa aquí</a>
                         </p>
@@ -48,21 +46,7 @@
             </section>
         </div>
         <!-- Java Script que realiza las validaciones -->
-    <script>
-        (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-                }, false)
-            })
-            })()
-    </script>
+        <script src="../LandingpageVinos/javascript/Validaciones.js"></script>
     </body>
 
 </html>
