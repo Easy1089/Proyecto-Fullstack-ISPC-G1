@@ -24,28 +24,23 @@
 <body class="body-login">
     <div class="container-login">
         <div class="login">
-            <form class="needs-validation" novalidate>
+            <form id = "form" name = "formLogin" novalidate>
                 <div class="content-login">
                     <i class="fa fa-lock" aria-hidden="true"></i>
                     <h1 class="h1-login">Login</h1>
 
                     <div style="width:100%;">
-                        <p>Usuario</p>
-                        <input type="text" class="text-login form-control" name="text-login" id="text-login-usuario" required>
-                        <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                            <p class="alerta-error"> Por favor ingrese un Usuario</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                        </div>
+                        <label>Usuario</label>
+                        <input type = "text" class = "text-login " name = "usuario" id = "usuario" required>
                     </div>
 
                     <div style="width:100%;">
-                        <p>Contraseña</p>
-                        <input type="password" class="text-login form-control" name="text-login" id="text-login-password" required>
-                        <div class="invalid-feedback"> <!-- Clase de boostrap en caso de error -->
-                            <p class="alerta-error"> Por favor ingrese una Contraseña</p> <!-- Se le agrega la clase alerta-error, la cual contiene la configuracion del msj de error -->
-                        </div>
+                        <label>Contraseña</label>
+                        <input type = "password" class = "text-login " name = "password" id = "password" required>
                     </div>
 
-                    <button type="submit" name="submit" id="submit" class="button-login">Empezar</button>
+                    <button type = "submit" name = "submit" id = "submit" class = "button-login">Empezar</button>
+                    <p style="width: 100%;" id = "warnings"></p>
 
                 </div>
                 <div>
@@ -79,22 +74,8 @@
             </form>
         </div>
     </div>
-    <!-- Java Script que realiza las validaciones -->
-    <script>
-        (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-                }, false)
-            })
-            })()
-    </script>
+     <!-- Java Script que realiza las validaciones -->
+    <script src="../LandingpageVinos/javascript/Validaciones.js"></script>
 </body>
 
 </html>
