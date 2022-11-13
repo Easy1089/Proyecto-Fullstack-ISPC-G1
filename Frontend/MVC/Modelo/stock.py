@@ -1,4 +1,4 @@
-# Controlador con manejo de datos con python 
+# Controlador con manejo de datos con python ejemplo tomado del demo de CRUD en python del sprint 2.
 
 # CRUD and DB conextion for CRUD in Python 
 
