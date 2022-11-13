@@ -1,12 +1,12 @@
 # Manejo de datos fuera de la vista y el controlador.
 
-    # Buscar_Producto()       
+    # Select_Buscar_Producto()       
     
-    # Validar_Producto()
+    # Getdatafromdb_Validar_Producto()
     
-    # Modificar_Producto()
+    # Update_Modificar_Producto()
     
-    # Elminar_Producto()
+    # Delete_Elminar_Producto()
     
     
     
