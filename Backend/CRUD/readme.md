@@ -6,9 +6,14 @@ Proyecto demo realizado con:
 * sqlite3, para el manejo de bases de datos
 * sqlitebrowser, para manejo de bases de datos
 
-
 Nota: El aplicativo de escritorio esta desarrollado sin el login de usuario, ya que solo se solicito el CRUD en python y se agrego 
 conexion a la base.
+
+* Modelo de Casos de Uso con Gestion de movimientos en grafico. 
+
+
+
+
 
 Autor: Fabiola Benitez >  Easy1089
 
