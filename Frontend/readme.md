@@ -7,6 +7,6 @@ Contenido:
 - MVC - Tkinter Proyecto Sistema de Gestion de stock de Vinoteca
 - readme.md
 
-
+-LINK A LANDING PAGE BOOSTRAP PARA FRONTEND DEL PROYECTO ---> https://landingpagevinos.dfrweb.com/
 
 
