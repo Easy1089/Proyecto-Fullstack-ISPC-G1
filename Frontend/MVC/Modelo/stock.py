@@ -1,4 +1,4 @@
-# Controlador con manejo de datos con python ejemplo tomado del demo de CRUD en python del sprint 2.
+# Ejemplo de manejo de datos tomado del demo de CRUD en python del sprint 2.
 
     # Search Product
     def search_product(self, name_search):
