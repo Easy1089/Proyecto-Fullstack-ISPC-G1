@@ -1,14 +1,14 @@
 # Manejo de datos fuera de la vista y el controlado.
 
-    # Busqueda de Producto         
+    # Buscar_Producto()       
     
-    # Funcion para ejecucion de las querys en la base de datos.
+    # Validar_Producto()
     
-    # Obtener Productos de la base de datos.
+    # Modificar_Producto()
     
-    # Modificar datos de un Producto
+    # Elminar_Producto()
     
-    # Eliminar Producto
+    
     
    
     
