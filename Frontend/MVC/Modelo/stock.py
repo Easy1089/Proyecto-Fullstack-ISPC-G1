@@ -1,4 +1,4 @@
-# Manejo de datos fuera de la vista y el controlado.
+# Manejo de datos fuera de la vista y el controlador.
 
     # Buscar_Producto()       
     
