@@ -4,11 +4,6 @@ Descripcion de lo realizado: Se realizó un esquema de diagrama de clases para p
 
 Diagrama de objetos y clase producto con atributo y metodos definidos en Python.
 
-Grupo de trabajo: A
 
-Grupo Footer:
-            Aparicio, Fernando
-            Diaz, Dario
-            Ponce, Dalma F.
 
 
